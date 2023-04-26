@@ -49,7 +49,7 @@ export const Label = styled.ul`
   color: #867070;
 `;
 export const Button = styled.button`
-  min-height: 45px;
+  height: 45px;
   width: 45px;
   border-radius: 50%;
   border-color: transparent;
