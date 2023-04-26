@@ -7,4 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 1000px;
     font-family: "helvetica neue";
   }
+  @media (max-width: 425px) {
+   padding: 20px;
+  }
+
 `;

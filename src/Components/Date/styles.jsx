@@ -12,4 +12,7 @@ export const Container = styled.div`
   color: aliceblue;
   font-weight: bold;
   letter-spacing: 2px;
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
 `;

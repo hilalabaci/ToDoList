@@ -6,6 +6,7 @@ export const Box = styled.div`
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   padding: 20px;
+  
 `;
 export const Item = styled.div`
   min-height: 70px;
@@ -58,6 +59,9 @@ export const Form = styled.form`
   padding-top: 15px;
   text-align: center;
   margin-left: 20px;
+  @media (max-width: 425px) {
+    
+  }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
   text-align: center;
@@ -78,5 +82,8 @@ export const NewItem = styled.input.attrs({ type: "text" })`
     color: grey;
     opacity: 0.7;
     letter-spacing: 1px;
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
   }
 `;
