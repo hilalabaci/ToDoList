@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import GetDate from "../Components/Date";
 import { Box, Button, Checkbox, Form, Item, Label, NewItem } from "./styles";
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 function Home() {
   const [inputvalue, setInputValue] = useState("");
   const [items, setItems] = useState([]);
@@ -13,7 +15,7 @@ function Home() {
     loadItems();
   }, []);
   async function loadItems() {
-    const response = await fetch("http://127.0.0.1:3003/", {
+    const response = await fetch(API_URL, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +33,7 @@ function Home() {
     // if (inputvalue === "" || inputvalue === undefined || inputvalue === null) return;
     if (!inputvalue) return;
     const itemData = { text: inputvalue };
-    const response = await fetch("http://127.0.0.1:3003/", {
+    const response = await fetch(API_URL, {
       method: "POST",
       body: JSON.stringify(itemData),
       headers: {
@@ -45,16 +47,15 @@ function Home() {
     }
   };
   async function deleteItem(id) {
-    const response = await fetch("http://127.0.0.1:3003?id=" + id, {
+    const response = await fetch(`${API_URL}?id=${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
       },
     });
-    if(response.ok){
-      setItems(items.filter(item=> item._id !== id))
+    if (response.ok) {
+      setItems(items.filter((item) => item._id !== id));
     }
-
   }
 
   return (
