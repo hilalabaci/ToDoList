@@ -6,7 +6,9 @@ export const Box = styled.div`
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  
+  @media (max-width: 425px) {
+    padding-top: 0px;
+  }
 `;
 export const Item = styled.div`
   min-height: 70px;
@@ -36,6 +38,8 @@ export const Checkbox = styled.input.attrs({ type: "checkbox" })`
     background-color: #3acfb6;
     border-color: white;
   }
+  @media (max-width: 425px) {
+  }
 `;
 export const Label = styled.ul`
   margin: 0;
@@ -60,7 +64,8 @@ export const Form = styled.form`
   text-align: center;
   margin-left: 20px;
   @media (max-width: 425px) {
-    
+    padding: 30px 0px 20px 0px;
+    margin: 0px;
   }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
@@ -84,6 +89,7 @@ export const NewItem = styled.input.attrs({ type: "text" })`
     letter-spacing: 1px;
   }
   @media (max-width: 425px) {
-    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
   }
 `;
