@@ -39,6 +39,8 @@ export const Checkbox = styled.input.attrs({ type: "checkbox" })`
     border-color: white;
   }
   @media (max-width: 425px) {
+    border: 2px solid;
+
   }
 `;
 export const Label = styled.ul`
