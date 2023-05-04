@@ -40,7 +40,6 @@ export const Checkbox = styled.input.attrs({ type: "checkbox" })`
   }
   @media (max-width: 425px) {
     border: 2px solid;
-
   }
 `;
 export const Label = styled.ul`
@@ -60,6 +59,10 @@ export const Button = styled.button`
   font-size: 30px;
   border-width: 0;
   text-align: center;
+  @media (max-width: 425px) {
+    min-height: 2em;
+    min-width: 2em;
+  }
 `;
 export const Form = styled.form`
   padding-top: 15px;
