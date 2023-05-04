@@ -66,20 +66,12 @@ export const Label = styled.ul`
   }
 `;
 export const Button = styled.button`
-  height: 45px;
-  width: 45px;
   border-radius: 50%;
   border-color: transparent;
   background-color: #867070;
   color: #fff;
   font-size: 30px;
   border-width: 0;
-  text-align: center;
-
-  @media (max-width: 425px) {
-    height: 40px;
-    width: 40px;
-  }
 `;
 export const Form = styled.form`
   text-align: center;
