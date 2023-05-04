@@ -75,7 +75,10 @@ export const Button = styled.button`
   color: #fff;
   font-size: 30px;
   border-width: 0;
-  padding: 10px 18px;
+  padding: 10px 19px;
+  @media (max-width: 425px) {
+    padding: 7px 16px;
+  }
 `;
 export const Form = styled.form`
   text-align: center;
