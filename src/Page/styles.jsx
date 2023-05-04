@@ -16,6 +16,9 @@ export const Container = styled.div`
 
 export const ButtonContainer = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 export const Box = styled.div`
   padding: 25px;
@@ -72,6 +75,7 @@ export const Button = styled.button`
   color: #fff;
   font-size: 30px;
   border-width: 0;
+  padding: 10px 18px;
 `;
 export const Form = styled.form`
   text-align: center;
