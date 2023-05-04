@@ -65,6 +65,9 @@ export const Button = styled.button`
     min-height: 1.5em;
     min-width: 1.5em;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const Form = styled.form`
