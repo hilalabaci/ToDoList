@@ -7,7 +7,6 @@ export const Box = styled.div`
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
   padding: 20px;
   @media (max-width: 425px) {
-    padding-top: 0px;
     max-width: fit-content;
   }
 `;
@@ -62,21 +61,23 @@ export const Button = styled.button`
   text-align: center;
 
   @media (max-width: 425px) {
-    min-height: 1.5em;
-    min-width: 1.5em;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    
   }
 `;
 export const Form = styled.form`
-  padding-top: 15px;
   text-align: center;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   @media (max-width: 425px) {
-    padding: 30px 0px 20px 0px;
-    margin: 0px;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
@@ -90,6 +91,7 @@ export const NewItem = styled.input.attrs({ type: "text" })`
   width: 313px;
   letter-spacing: 1px;
   color: #867070;
+  
   &:focus {
     outline: none;
     box-shadow: inset 0 -3px 0 0 #867070;
@@ -102,6 +104,5 @@ export const NewItem = styled.input.attrs({ type: "text" })`
   @media (max-width: 425px) {
     width: fit-content;
     height: fit-content;
-    
   }
 `;
