@@ -1,6 +1,16 @@
 import React, { useEffect, useState } from "react";
 import GetDate from "../Components/Date";
-import { Box, Button, Checkbox, Form, Item, Label, NewItem } from "./styles";
+import {
+  Box,
+  Button,
+  ButtonContainer,
+  Checkbox,
+  Container,
+  Form,
+  Item,
+  Label,
+  NewItem,
+} from "./styles";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -59,7 +69,7 @@ function Home() {
   }
 
   return (
-    <div>
+    <Container>
       <GetDate />
       <Box>
         {items.map((item) => (
@@ -77,12 +87,14 @@ function Home() {
             autocomplete="off"
             onChange={handlerChange}
           />
-          <Button type="submit" name="list">
-            +
-          </Button>
+          <ButtonContainer>
+            <Button type="submit" name="list">
+              +
+            </Button>
+          </ButtonContainer>
         </Form>
       </Box>
-    </div>
+    </Container>
   );
 }
 export default Home;

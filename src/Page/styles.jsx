@@ -1,21 +1,36 @@
 import styled from "styled-components";
+
+export const Container = styled.div`
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 70px 0;
+  gap: 50px;
+  @media (max-width: 425px) {
+    width: auto;
+    margin: 15px 0;
+    padding: 15px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  flex: 1;
+`;
 export const Box = styled.div`
-  max-width: 400px;
-  margin: 50px auto;
+  padding: 25px;
   background: white;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  padding: 20px;
   @media (max-width: 425px) {
-    max-width: fit-content;
+    padding: 5px;
   }
 `;
 export const Item = styled.div`
-  min-height: 70px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #f1f1f1;
-  padding: 10px;
+  padding: 15px;
 `;
 export const Checkbox = styled.input.attrs({ type: "checkbox" })`
   &:before {
@@ -38,16 +53,17 @@ export const Checkbox = styled.input.attrs({ type: "checkbox" })`
     background-color: #3acfb6;
     border-color: white;
   }
-  @media (max-width: 425px) {
-    border: 2px solid;
-  }
+  appearance: none;
+  margin: 4px;
 `;
 export const Label = styled.ul`
   margin: 0;
-  padding: 20px 20px 20px 40px;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
   color: #867070;
+  @media (max-width: 425px) {
+    font-size: 18px;
+  }
 `;
 export const Button = styled.button`
   height: 45px;
@@ -61,8 +77,8 @@ export const Button = styled.button`
   text-align: center;
 
   @media (max-width: 425px) {
-    text-align: center;
-    
+    height: 40px;
+    width: 40px;
   }
 `;
 export const Form = styled.form`
@@ -71,13 +87,14 @@ export const Form = styled.form`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 10px 20px 0px 20px;
 
   @media (max-width: 425px) {
-    min-height: 5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 10px;
   }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
@@ -88,10 +105,10 @@ export const NewItem = styled.input.attrs({ type: "text" })`
   background: transparent;
   font-size: 20px;
   font-weight: 200;
-  width: 313px;
   letter-spacing: 1px;
   color: #867070;
-  
+  flex: 3;
+
   &:focus {
     outline: none;
     box-shadow: inset 0 -3px 0 0 #867070;
@@ -102,7 +119,6 @@ export const NewItem = styled.input.attrs({ type: "text" })`
     letter-spacing: 1px;
   }
   @media (max-width: 425px) {
-    width: fit-content;
-    height: fit-content;
+    font-size: 18px;
   }
 `;
