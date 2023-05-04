@@ -8,6 +8,7 @@ export const Box = styled.div`
   padding: 20px;
   @media (max-width: 425px) {
     padding-top: 0px;
+    max-width: fit-content;
   }
 `;
 export const Item = styled.div`
@@ -59,9 +60,11 @@ export const Button = styled.button`
   font-size: 30px;
   border-width: 0;
   text-align: center;
+
   @media (max-width: 425px) {
     min-height: 1.5em;
     min-width: 1.5em;
+    font-size: 20px;
   }
 `;
 export const Form = styled.form`
@@ -69,8 +72,8 @@ export const Form = styled.form`
   text-align: center;
   margin-left: 20px;
   @media (max-width: 425px) {
-    padding: 0;
-    margin: 0;
+    padding: 30px 0px 20px 0px;
+    margin: 0px;
   }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
@@ -96,5 +99,6 @@ export const NewItem = styled.input.attrs({ type: "text" })`
   @media (max-width: 425px) {
     width: fit-content;
     height: fit-content;
+    
   }
 `;

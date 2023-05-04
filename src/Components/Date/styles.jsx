@@ -14,5 +14,6 @@ export const Container = styled.div`
   letter-spacing: 2px;
   @media (max-width: 425px) {
     flex-direction: column;
+    max-width: fit-content;
   }
 `;
