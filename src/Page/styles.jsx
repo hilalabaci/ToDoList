@@ -59,7 +59,6 @@ export const Button = styled.button`
   font-size: 30px;
   border-width: 0;
   text-align: center;
-
   @media (max-width: 425px) {
     min-height: 1.5em;
     min-width: 1.5em;
@@ -70,8 +69,8 @@ export const Form = styled.form`
   text-align: center;
   margin-left: 20px;
   @media (max-width: 425px) {
-    padding: 30px 0px 20px 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
   }
 `;
 export const NewItem = styled.input.attrs({ type: "text" })`
