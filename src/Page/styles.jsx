@@ -76,6 +76,7 @@ export const Button = styled.button`
   font-size: 30px;
   border-width: 0;
   padding: 10px 19px;
+  vertical-align: middle;
   @media (max-width: 425px) {
     padding: 0px;
     font-size: 24px;
