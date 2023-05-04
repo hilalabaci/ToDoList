@@ -77,8 +77,10 @@ export const Button = styled.button`
   border-width: 0;
   padding: 10px 19px;
   @media (max-width: 425px) {
-    padding: 4px 12px;
-    font-size: 25px;
+    padding: 0px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
   }
 `;
 export const Form = styled.form`
