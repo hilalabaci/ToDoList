@@ -59,9 +59,10 @@ export const Button = styled.button`
   font-size: 30px;
   border-width: 0;
   text-align: center;
+
   @media (max-width: 425px) {
-    min-height: 2em;
-    min-width: 2em;
+    min-height: 1.5em;
+    min-width: 1.5em;
   }
 `;
 export const Form = styled.form`
