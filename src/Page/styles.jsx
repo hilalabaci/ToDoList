@@ -77,7 +77,7 @@ export const Button = styled.button`
   border-width: 0;
   padding: 10px 19px;
   @media (max-width: 425px) {
-    padding: 7px 16px;
+    padding: 2px 12px;
   }
 `;
 export const Form = styled.form`
